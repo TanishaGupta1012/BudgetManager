@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.signupActivity"
+    android:orientation="vertical"
+    android:background="@drawable/splash">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+
+            android:layout_marginBottom="30dp"
+            android:id="@+id/profileimage"
+            android:layout_width="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="120dp"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/fullnametextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name*"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/profileimage"/>
+
+        <EditText
+
+            android:background="@drawable/loginbuttondesign"
+            android:layout_below="@id/fullnametextview"
+            android:id="@+id/Edittextfullname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/emailtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Edittextfullname"
+            android:layout_marginLeft="10dp"
+            android:text="Email*" />
+
+        <EditText
+            android:id="@+id/Edittextemail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/emailtextview"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/loginbuttondesign"
+            android:paddingLeft="20dp"
+            android:inputType="textEmailAddress"/>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/phonetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone No.*"
+            android:layout_below="@id/Edittextemail"/>
+
+        <EditText
+            android:id="@+id/Edittextphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/phonetextview"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/loginbuttondesign"
+            android:paddingLeft="20dp"
+            android:inputType="number"
+            android:maxLength="10"/>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/passtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password*"
+            android:layout_below="@id/Edittextphone"/>
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_below="@id/passtextview"
+            android:id="@+id/Edittextpassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp" />
+        <Button
+            android:id="@+id/buttonregister"
+            android:layout_margin="10dp"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:layout_below="@id/Edittextpassword"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

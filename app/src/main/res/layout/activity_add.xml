@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.AddActivity"
+    android:background="@drawable/splash"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center">
+        <TextView
+            android:layout_marginBottom="15dp"
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Name"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_below="@+id/textview1"
+            android:paddingLeft="20dp"
+            android:id="@+id/editextexpensename"
+            android:hint="Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_below="@+id/editextexpensename"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Spent"
+            android:textSize="20dp"/>
+        <EditText
+            android:inputType="numberDecimal"
+            android:hint="Amount"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edittextamount"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/textview2"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edittextamount"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/textview3"
+            android:text="Description"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:hint="Description"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edittextdescription"
+            android:paddingLeft="20dp"
+            android:layout_below="@+id/textview3"
+            android:layout_marginBottom="15dp"/>
+        <Button
+            android:id="@+id/buttonadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_below="@+id/edittextdescription"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Add"/>
+
+        <Button
+            android:id="@+id/buttonclear"
+            android:text="Clear"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbuttondesign"
+            android:layout_toRightOf="@+id/buttonadd"
+            android:layout_below="@+id/edittextdescription"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
