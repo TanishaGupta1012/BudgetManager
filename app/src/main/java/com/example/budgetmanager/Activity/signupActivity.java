@@ -44,6 +44,7 @@ public class signupActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
 
+
         circularImageView = findViewById(R.id.profileimage);
         editTextname=findViewById(R.id.Edittextfullname);
         editTextemail=findViewById(R.id.Edittextemail);

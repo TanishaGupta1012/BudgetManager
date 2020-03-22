@@ -150,7 +150,7 @@ public class DashboardActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.graph:
-                Intent intent1 = new Intent(DashboardActivity.this,AddActivity.class);
+                Intent intent1 = new Intent(DashboardActivity.this,graphActivity.class);
                 startActivity(intent1);
                 finish();
                 break;

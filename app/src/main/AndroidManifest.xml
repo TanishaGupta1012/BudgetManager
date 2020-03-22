@@ -14,6 +14,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity.graphActivity"></activity>
         <activity android:name=".Activity.UserprofileActivity" />
         <activity android:name=".Activity.AddActivity" />
         <activity android:name=".Activity.signupActivity" />

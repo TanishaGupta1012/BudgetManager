@@ -6,12 +6,11 @@ import android.os.Bundle;
 
 import com.example.budgetmanager.R;
 
-public class UserprofileActivity extends AppCompatActivity {
+public class graphActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_userprofile);
-
+        setContentView(R.layout.activity_graph);
     }
 }
