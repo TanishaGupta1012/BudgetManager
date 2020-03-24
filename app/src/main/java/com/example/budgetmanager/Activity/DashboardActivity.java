@@ -91,22 +91,9 @@ public class DashboardActivity extends AppCompatActivity {
                     arrayList.add(addpojo1);
 
                 }
-
-
-
                 CustomAdapter customAdapter = new CustomAdapter(DashboardActivity.this, R.layout.listview_item, arrayList);
                 listview.setAdapter(customAdapter);
-
-
             }
-
-
-
-
-
-
-
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
                 Toast.makeText(DashboardActivity.this, "" +databaseError.getMessage(), Toast.LENGTH_SHORT).show();
