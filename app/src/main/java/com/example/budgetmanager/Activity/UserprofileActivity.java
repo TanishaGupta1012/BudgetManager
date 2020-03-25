@@ -1,7 +1,10 @@
 package com.example.budgetmanager.Activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -36,25 +39,49 @@ public class UserprofileActivity extends AppCompatActivity {
         aboutus = findViewById(R.id.aboutus);
         feedback = findViewById(R.id.feedback);
 
+
         firebaseDatabase = FirebaseDatabase.getInstance();
-        databaseReference = firebaseDatabase.getReference().child("dd");
+        databaseReference = firebaseDatabase.getReference();
 
-        databaseReference.addValueEventListener(new ValueEventListener() {
+
+        editprofile.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
-                    UserPojo userPojo = dataSnapshot1.getValue(UserPojo.class);
-
-                    String name = userPojo.getName();
-                    String emailAddress = userPojo.getEmail();
-                    username.setText(name);
-                    email.setText(emailAddress);
-                }
+            public void onClick(View v) {
+                Intent intent = new Intent(UserprofileActivity.this,EditProfileActivity.class);
+                startActivity(intent);
+                finish();
             }
+        });
+        logbook.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancelled(@NonNull DatabaseError databaseError) {
-                Toast.makeText(UserprofileActivity.this, ""+databaseError.getMessage(), Toast.LENGTH_SHORT).show();
-
+            public void onClick(View v) {
+                Intent intent = new Intent(UserprofileActivity.this,LogbookActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        graph.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserprofileActivity.this,graphActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserprofileActivity.this,AboutusActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        feedback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(UserprofileActivity.this,FeedbackActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
