@@ -23,7 +23,7 @@ public class AddActivity extends AppCompatActivity {
     EditText edittextamount,edittextexpense,edittextdescription;
     Button buttonadd,buttonclear;
     DatabaseReference firebaseDatabase,Addreference;
-    //DatabaseReference databaseReference;
+    DatabaseReference databaseReference;
     String emailentered,phonenumber;
     int maxid;
 

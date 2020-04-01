@@ -59,7 +59,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         }
 
-       // Toast.makeText(this, "Dashboard "+userid, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Dashboard "+userid, Toast.LENGTH_SHORT).show();
 
 
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -89,7 +89,6 @@ public class DashboardActivity extends AppCompatActivity {
                     addpojo2.setExpensename(expensename);
                     addpojo2.setAmount(Amount);
                     arrayList.add(addpojo1);
-
                 }
                 CustomAdapter customAdapter = new CustomAdapter(DashboardActivity.this, R.layout.listview_item, arrayList);
                 listview.setAdapter(customAdapter);
@@ -151,6 +150,4 @@ public class DashboardActivity extends AppCompatActivity {
         return true;
     }
 }
-
-
 
